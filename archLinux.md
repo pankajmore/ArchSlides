@@ -74,7 +74,11 @@
 
 - no version anxiety
 
-- no upgrade breakage
+- less upgrade breakage
+
+- easier to find out what went wrong in case something breaks
+
+- easier to rollback
 
 # non-patched, vanilla software
 
