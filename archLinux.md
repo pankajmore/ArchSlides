@@ -39,6 +39,26 @@
 
 - meta distribution
 
+- encourages configuration using text-files
+
+# advantages of text-based configuration
+
+- universally accessible
+
+- infinitely more configurable 
+
+- does _NOT_ hide any configuration flags
+
+- easy backup/restore
+
+- store your configs in version control
+
+- revert back to last working config 
+
+- share and improve you configuration
+
+- https://github.com/pankajmore/dotfiles
+
 # _do-it-yourself_ approach
 
 - you are fully responsible for your system
@@ -94,6 +114,8 @@
 
 - install using pacman to keep track of the newly installed package
 
+- see a PKGBUILD in action! eg. firefox
+
 
 # Why ABS?
 
@@ -116,6 +138,8 @@
 - Arch User Repository (AUR) is a community-driven repository for Arch users.
 
 - collection of unsupported PKGBUILDs
+
+- iitk firewall authentication PKGBUILD
 
 - automates those long boring ubuntu tutorials to install some estoric software
 
