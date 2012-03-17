@@ -36,42 +36,160 @@
 </div>
 <div class="section slide level1" id="the-arch-way">
 <h1>The Arch Way</h1>
-<h2>Simplicity</h2>
-<h2>Code-correctness over convenience</h2>
-<h2>User-centric vs &quot;User-Friendly&quot;</h2>
-<h2>Openness</h2>
-<h2>Freedom</h2>
 </div>
-<div class="section slide level1" id="do-it-yourself">
-<h1>do-it-yourself</h1>
+<div class="section slide level1" id="simplicity">
+<h1>Simplicity</h1>
+<ul>
+<li><p>trying to hide the complexities of a system actually results in an even more complex system</p></li>
+<li><p>keep the complexities well organized and transparent</p></li>
+</ul>
+</div>
+<div class="section slide level1" id="code-correctness-over-convenience">
+<h1>Code-correctness over convenience</h1>
+<ul>
+<li><p>elegance of design , clean, correct, simple code, rather than unnecessary patching, automation, eye candy or &quot;newbie-friendliness.&quot;</p></li>
+<li><p>Simple implementation shall always trump simple user interface.</p></li>
+</ul>
+</div>
+<div class="section slide level1" id="user-centric-vs-user-friendly">
+<h1>User-centric vs &quot;User-Friendly&quot;</h1>
+<ul>
+<li>complete control and responsibility over the system.</li>
+</ul>
+</div>
+<div class="section slide level1" id="openness">
+<h1>Openness</h1>
+<ul>
+<li><p>Openness removes all boundaries and abstraction between the user and the system.</p></li>
+<li><p>provides more control, while simultaneously simplifying system maintenance.</p></li>
+</ul>
+</div>
+<div class="section slide level1" id="freedom">
+<h1>Freedom</h1>
+<ul>
+<li><p>embrace functionality over ideology</p></li>
+<li><p>no automatic configuration</p></li>
+<li><p>no opinions</p></li>
+<li><p>&quot;Arch Linux is what you make it.&quot; -- Judd Vinet</p></li>
+<li><p>meta distribution</p></li>
+</ul>
+</div>
+<div class="section slide level1" id="do-it-yourself-approach">
+<h1><em>do-it-yourself</em> approach</h1>
+<ul>
+<li><p>you are fully responsible for your system</p></li>
+<li><p>you know enough about the system to think of possible causes that lead to a bug</p></li>
+<li><p>try to fix the system yourself before asking</p></li>
+</ul>
 </div>
 <div class="section slide level1" id="rolling-release">
 <h1>Rolling Release</h1>
+<ul>
+<li><p>latest version of your favourite software in the official repo</p></li>
+<li><p>no version anxiety</p></li>
+<li><p>no upgrade breakage</p></li>
+</ul>
+</div>
+<div class="section slide level1" id="non-patched-vanilla-software">
+<h1>non-patched, vanilla software</h1>
+<ul>
+<li><p>software delivered as the upstream developer intended</p></li>
+<li><p>less monkey patching leads to fewer bugs introduced by the distro maintaners</p></li>
+<li><p>almost <em>all</em> bugs are upstream</p></li>
+</ul>
 </div>
 <div class="section slide level1" id="bsd-like-init-system">
 <h1>BSD <em>like</em> init system</h1>
+<ul>
+<li><p><em>rc.conf</em> to manage your major system settings</p></li>
+<li><p>much easier to configure than multi-directory runlevel based init scripts</p></li>
+</ul>
+</div>
+<div class="section slide level1" id="pacman">
+<h1>Pacman</h1>
+<ul>
+<li><p>extremely fast</p></li>
+<li><p>tells you what its doing, and doesn't do anything without asking</p></li>
+<li><p>does <em>NOT</em> 'automate' for your 'convenience'</p></li>
+<li><p>does <em>NOT</em> alter configs which might have been 'customized'</p></li>
+<li><p>does <em>NOT</em> install a service and set it up to run automatically</p></li>
+<li><p>only does what a <em>package manager</em> ought to do</p></li>
+</ul>
+</div>
+<div class="section slide level1" id="abs">
+<h1>ABS</h1>
+<ul>
+<li><p>ports-like system for building and packaging software from source Code</p></li>
+<li><p>PKGBUILD to automate software compilation</p></li>
+<li><p>Much saner than manually compiling a software</p></li>
+<li><p>install using pacman to keep track of the newly installed package</p></li>
+</ul>
+</div>
+<div class="section slide level1" id="why-abs">
+<h1>Why ABS?</h1>
+<ul>
+<li><p>Compile or recompile a package, for any reason</p></li>
+<li><p>Make and install new packages from source of software for which no packages are yet available</p></li>
+<li><p>Customize existing packages to fit your needs (enabling or disabling options, patching)</p></li>
+<li><p>Rebuild your entire system using your compiler flags, &quot;a la FreeBSD&quot; (e.g. with pacbuilder)</p></li>
+<li><p>Cleanly build and install your own custom kernel</p></li>
+<li><p>Get kernel modules working with your custom kernel</p></li>
+<li><p>Easily compile and install a newer, older, beta, or development version of an Arch package by editing the version number in the PKGBUILD</p></li>
+</ul>
+</div>
+<div class="section slide level1" id="aur">
+<h1>AUR</h1>
+<ul>
+<li><p>Arch User Repository (AUR) is a community-driven repository for Arch users.</p></li>
+<li><p>collection of unsupported PKGBUILDs</p></li>
+<li><p>automates those long boring ubuntu tutorials to install some estoric software</p></li>
+</ul>
 </div>
 <div class="section slide level1" id="who-should-not-use-arch">
 <h1>Who should <em>NOT</em> use Arch?</h1>
 <ul>
-<li><p>after reading The Arch Way, you disagree with the philosophy.</p></li>
+<li><p>you disagree with the Arch philosophy.</p></li>
 <li><p>you do not have the ability/time/desire for a 'do-it-yourself' GNU/Linux distribution.</p></li>
 <li><p>you require support for an architecture other than x86_64 or i686.</p></li>
-<li><p>you take a strong stand on using a distribution which only provides free software as defined by GNU.</p></li>
+<li>you take a strong stand on using a distribution which only provides free software as defined by GNU.</li>
 <li><p>you believe an operating system should configure itself, run out of the box, and include a complete default set of software and desktop environment on the installation media.</p></li>
 <li><p>you do not want a bleeding edge, rolling release GNU/Linux distribution.</p></li>
 <li><p>you are happy with your current OS.</p></li>
 <li><p>you want an OS that targets a different userbase.</p></li>
 </ul>
 </div>
-<div class="section slide level1" id="pacman">
-<h1>Pacman</h1>
+<div class="section slide level1" id="advantages-of-using-arch">
+<h1>Advantages of using Arch !!</h1>
+<ul>
+<li><p>&quot;the red pill for ubuntu users&quot;</p></li>
+<li><p>realise that debating which distro is better is pointless</p></li>
+<li><p>an end to your <em>distro-hopping</em> habit</p></li>
+<li><p>more knowledge about linux internals than you could have learnt in years of using ubuntu</p></li>
+<li><p>improves your <em>sys-admin</em> skills</p></li>
+<li><p>smooth system maintenance</p></li>
+</ul>
 </div>
-<div class="section slide level1" id="abs">
-<h1>ABS</h1>
+<div class="section slide level1" id="try-arch">
+<h1>Try Arch</h1>
+<ul>
+<li><p>Programmers and tinkerers generally like Arch after switching from Ubuntu</p></li>
+<li><p>Those who are new to Linux might need to spend considerable time and effort to get familiar with the Linux ecosystem</p></li>
+<li><p>competent Ubuntu users might be delighted by Arch</p></li>
+<li><p>Test it in a VirtualBox</p></li>
+<li><p>a weekend to spare for installation</p></li>
+<li><p>follow the Beginner's Guide in the Arch Wiki to install Arch</p></li>
+<li><p>just by installing Arch you would know more about Linux than the average Ubuntu guy</p></li>
+</ul>
 </div>
-<div class="section slide level1" id="aur">
-<h1>AUR</h1>
+<div class="section slide level1" id="relevant-links">
+<h1>Relevant Links :</h1>
+<ul>
+<li><p><a href="http://www.archlinux.org">Arch Linux Home Page</a></p></li>
+<li><p><a href="https://wiki.archlinux.org/index.php/The_Arch_Way">The Arch Way</a></p></li>
+<li><p><a href="https://wiki.archlinux.org/index.php/FAQ">FAQ</a></p></li>
+<li><p><a href="https://wiki.archlinux.org/index.php/Beginners%27_Guide">Beginners' Guide</a></p></li>
+<li><p><a href="https://github.com/pankajmore/ArchSlides">This Slide</a> goo.gl/v8Vb1</p></li>
+</ul>
 </div>
 </div>
 </body>
