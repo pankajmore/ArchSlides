@@ -1,6 +1,6 @@
 % Arch Linux
 % Pankaj More
-% March 15,2012
+% March 17,2012
 
 # The Arch Way
 
