@@ -139,9 +139,10 @@
 
 - collection of unsupported PKGBUILDs
 
-- iitk firewall authentication PKGBUILD
 
 - automates those long boring ubuntu tutorials to install some estoric software
+
+- eg. iitk firewall authentication PKGBUILD
 
 # Who should _NOT_ use Arch?
 
